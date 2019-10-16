@@ -25,8 +25,15 @@ namespace RegexTest
             {
                 Console.WriteLine(match);
             } */
-
+            /* ÖVNING 3
             string pattern = "a.";
+            var matches = Regex.Matches(input, pattern);
+            foreach (var match in matches)
+            {
+                Console.WriteLine(match);
+            } */
+
+            string pattern = "[^t]t[^t]";
             var matches = Regex.Matches(input, pattern);
             foreach (var match in matches)
             {
