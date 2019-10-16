@@ -73,7 +73,12 @@ namespace RegexTest
                 Console.WriteLine(match);
             } */
 
-
+            var matches = Regex.Matches(input2, @"\b\w[aouåeiyäö]\w+\b");
+            Console.WriteLine(matches.Count);
+            foreach (var match in matches)
+            {
+                Console.WriteLine(match);
+            }
             Console.ReadKey();
         }
     }
